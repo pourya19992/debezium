@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@avdf01.rh:2019/rayannav21c.rh
+    username: N21PYF03
+    password: fund1234
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+  debezium:
+    engine:
+      name: oracle-engine
+      connector-class: io.debezium.connector.oracle.OracleConnector
+      offset-storage: org.apache.kafka.connect.storage.FileOffsetBackingStore
+      offset-storage-file-filename: /tmp/offsets.dat
+      offset-flush-interval-ms: 60000
+      database:
+        hostname: avdf01.rh
+        port: 2019
+        user: N21PYF03
+        password: fund1234
+        dbname: rayannav21c.rh
+        server-name: oracle-server
+      database-history: io.debezium.relational.history.FileDatabaseHistory
+      database-history-file-filename: /tmp/dbhistory.dat
+      table-include-list: AHA_BANK
