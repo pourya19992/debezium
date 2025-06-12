@@ -4,7 +4,7 @@ package org.example.debezium.config;
 import io.debezium.engine.ChangeEvent;
 import io.debezium.engine.DebeziumEngine;
 import io.debezium.engine.format.Json;
-import org.example.debezium.ChangeEventHandler;
+import org.example.debezium.services.ChangeEventHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

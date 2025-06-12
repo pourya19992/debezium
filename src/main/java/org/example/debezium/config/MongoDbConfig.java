@@ -6,5 +6,4 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("mongodb")
 public class MongoDbConfig {
-    // تنظیمات MongoDB
 }

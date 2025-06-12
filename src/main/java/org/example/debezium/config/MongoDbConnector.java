@@ -9,17 +9,14 @@ public class MongoDbConnector implements DatabaseConnector {
 
     @Override
     public void connect() {
-        // اتصال به MongoDB
     }
 
     @Override
     public void save(Object data) {
-        // ذخیره در MongoDB
     }
 
     @Override
     public Object fetch(String query) {
-        // بازیابی از MongoDB
         return null;
     }
 }

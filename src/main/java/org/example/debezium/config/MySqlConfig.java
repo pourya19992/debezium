@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("mysql")
 public class MySqlConfig {
-    // تنظیمات MySQL
+
 }

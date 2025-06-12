@@ -1,3 +1,22 @@
 spring:
   profiles:
     active: mongodb
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      auto-offset-reset: earliest
+      #earliest: faghat msg haei daryaft mishavad ke dar hengame khamoshi ersal shode, va agar group jadid bashe hame
+      #msg haye topic ro az aval daryaft mikonad
+
+      #latest: faghat msg haei daryaft mishavad ke dar hengame khamoshi ersal shode
+      #va agar group jadid bashe payam haye ghabli ro daryaft nemikonad
+
+      #none: faghat msg haei daryaft mishavad ke dar hengame khamoshi ersal shode
+      #va agar group jadid bashe khata midahad
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

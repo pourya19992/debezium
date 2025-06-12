@@ -7,12 +7,12 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaConfig {
     @Bean
     public NewTopic j2osTopic() {
-        return TopicBuilder.name("j2os")
+        return TopicBuilder.name("nekso")
                 .build();
     }
     @Bean
     public NewTopic sharifTopic() {
-        return TopicBuilder.name("sharif")
+        return TopicBuilder.name("zarin")
                 .build();
     }
 }

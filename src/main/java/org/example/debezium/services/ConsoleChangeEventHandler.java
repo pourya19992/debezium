@@ -1,4 +1,4 @@
-package org.example.debezium;
+package org.example.debezium.services;
 
 import io.debezium.engine.ChangeEvent;
 import org.slf4j.LoggerFactory;

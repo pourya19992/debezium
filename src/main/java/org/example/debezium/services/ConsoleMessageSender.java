@@ -1,4 +1,4 @@
-package org.example.debezium;
+package org.example.debezium.services;
 
 public class ConsoleMessageSender implements MessageSender {
     @Override
